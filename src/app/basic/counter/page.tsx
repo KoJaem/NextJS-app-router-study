@@ -1,6 +1,6 @@
 "use client";
+import { useCountStore } from '@/app/basic/counter/_store';
 import Link from 'next/link';
-import { useCountStore } from "./_store";
 
 export default function Page() {
   const { count, decrease, increase } = useCountStore(state => state);
@@ -25,7 +25,7 @@ export default function Page() {
         </button>
       </div>
       {/* 페이지 이동했을때도 상태가 유지됨! */}
-      <Link href={'/counter2'}
+      <Link href={'/basic/counter2'}
       >counter2 page</Link>
     </main>
   );
