@@ -1,5 +1,5 @@
 "use client";
-import { useCountStore } from '@/app/(zustand)/basic/_store';
+import { useCountStore } from '@/(zustand)/basic/_store';
 import Link from 'next/link';
 
 export default function Page() {

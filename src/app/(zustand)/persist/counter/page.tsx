@@ -1,6 +1,6 @@
 "use client";
-import usePersistStore from "@/app/hooks/usePersistStore";
-import { useCountStore } from "@/app/(zustand)/persist/_store";
+import usePersistStore from "@/hooks/usePersistStore";
+import { useCountStore } from "@/(zustand)/persist/_store";
 import Link from "next/link";
 export default function Page() {
   // remark below if you don't want to use persist store
