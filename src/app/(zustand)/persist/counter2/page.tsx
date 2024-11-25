@@ -1,6 +1,6 @@
 "use client";
+import { useCountStore } from "@/app/(zustand)/persist/_store";
 import usePersistStore from "@/app/hooks/usePersistStore";
-import { useCountStore } from "@/app/persist/counter/_store";
 import Link from "next/link";
 export default function Page() {
   // remark below if you don't want to use persist store
@@ -27,7 +27,7 @@ export default function Page() {
           Decrease
         </button>
       </div>
-      <Link href={"/persist/counter2"}>counter2 page</Link>
+      <Link href={"/persist/counter"}>counter page</Link>
     </main>
   );
 }
